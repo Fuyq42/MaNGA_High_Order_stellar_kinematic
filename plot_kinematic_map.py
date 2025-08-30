@@ -2,18 +2,17 @@ from astropy.io import fits
 import numpy as np
 import matplotlib
 import matplotlib.pyplot as plt
-from astropy.io import fits
 from plotbin.sauron_colormap import register_sauron_colormap
 from mpl_toolkits.axes_grid1 import make_axes_locatable
 register_sauron_colormap()
 def extract_kinematic_maps(mangaid):
     
     data = fits.open('kinematics/'+mangaid+'.fits')
-    V = data['Stellar_Vel_GH'].data
-    S = data['Stellar_Sigma_GH'].data
-    h3 = data['Stellar_h3_GH'].data
-    h4 = data['Stellar_h4_GH'].data
-    flux = data['DAP_SPX_MFLUX'].data
+    V = data['Stellar_Vel_GH'].data #Line-of-sight stellar velocity
+    S = data['Stellar_Sigma_GH'].data #Line-of-sight stellar velocity dispersion
+    h3 = data['Stellar_h3_GH'].data #Gauss-Hermite coefficient h3
+    h4 = data['Stellar_h4_GH'].data #Gauss-Hermite coefficient h4
+    flux = data['DAP_SPX_MFLUX'].data #g-band-weighted mean flux
     size = V.shape[0]
     center = int(size / 2)
 
