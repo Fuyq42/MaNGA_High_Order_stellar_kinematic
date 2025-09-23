@@ -1,5 +1,5 @@
 # MaNGA_High_Order_stellar_kinematic
-The stellar kinematic moments (V, $\sigma$, $h_3$, $h_4$) on a sample of 2, 230 galaxies with $\sigma_e$ > 140km/s in the final data release of the MaNGA survey. The total size of the kinematic files for these galaxies is about 800 MB.
+The stellar kinematic moments (V, $\sigma$, $h_3$, $h_4$) on a sample of 2, 230 galaxies with $\sigma_e$ > 140km/s in the final data release of the MaNGA survey. The total size of the kinematic files for these galaxies is about 900 MB.
 
 ## Kinematic Data
 
