@@ -41,3 +41,4 @@ Users can refer to the example in `plot_stellar_lib.py` to read the templates fr
 These templates are **normalized by their median value**.  
 
 Running `plot_stellar_lib.py` will generate the figure `Template-stars.png` in the `example` folder.
+ 
